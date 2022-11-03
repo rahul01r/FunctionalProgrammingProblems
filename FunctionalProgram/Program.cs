@@ -7,7 +7,7 @@
 
             while (true)
             {
-                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year\n3.Power of Two numbers");
+                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year\n3.Power of Two numbers\n4.Harmonic Number");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -23,6 +23,10 @@
                         PowerOfTwoNum powerOfTwoNum = new PowerOfTwoNum();
                         powerOfTwoNum.Read();
                         break;
+                    case 4:
+                        HarmonicNumber harmonicNumber = new HarmonicNumber();
+                        harmonicNumber.Number();
+                        break;  
                 }
             }
         }
