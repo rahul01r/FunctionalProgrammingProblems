@@ -7,7 +7,7 @@
 
             while (true)
             {
-                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year\n3.Power of Two numbers\n4.Harmonic Number\n5.Factors of Number \n6.QuotientRemainder");
+                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year\n3.Power of Two numbers\n4.Harmonic Number\n5.Factors of Number \n6.QuotientRemainder \n7.Swap Two Numbers");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -35,6 +35,11 @@
                         QuotientRemainder quotientRemainder = new QuotientRemainder();      
                         quotientRemainder.QuoRem();
                         break;
+                    case 7:
+                        SwapTwoNumber swapTwoNumber = new SwapTwoNumber();
+                        swapTwoNumber.Swap();
+                        break;
+
                 }
             }
         }
