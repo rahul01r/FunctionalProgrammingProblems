@@ -7,7 +7,7 @@
 
             while (true)
             {
-                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year\n3.Power of Two numbers\n4.Harmonic Number");
+                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year\n3.Power of Two numbers\n4.Harmonic Number\n5.Factors of Number");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -26,7 +26,11 @@
                     case 4:
                         HarmonicNumber harmonicNumber = new HarmonicNumber();
                         harmonicNumber.Number();
-                        break;  
+                        break;
+                    case 5:
+                        Factors factors = new Factors();
+                        factors.Fact();
+                        break;
                 }
             }
         }
