@@ -7,7 +7,7 @@
 
             while (true)
             {
-                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year");
+                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year\n3.Power of Two numbers");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -19,6 +19,10 @@
                         LeapYear leapYear = new LeapYear();
                         leapYear.yearcheck();
                     break;
+                    case 3:
+                        PowerOfTwoNum powerOfTwoNum = new PowerOfTwoNum();
+                        powerOfTwoNum.Read();
+                        break;
                 }
             }
         }
