@@ -7,7 +7,7 @@
 
             while (true)
             {
-                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year\n3.Power of Two numbers\n4.Harmonic Number\n5.Factors of Number \n6.QuotientRemainder \n7.Swap Two Numbers \n8. check Given Number is Even or Odd \n9. Check an Alphabet is Vowel or Consonant");
+                Console.WriteLine("Select program \n1.Flip Coin \n2.Leap Year\n3.Power of Two numbers\n4.Harmonic Number\n5.Factors of Number \n6.QuotientRemainder \n7.Swap Two Numbers \n8. check Given Number is Even or Odd \n9. Check an Alphabet is Vowel or Consonant \n10.Find the Largest Among Three Numbers");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -47,7 +47,10 @@
                         AlphabateIsVowelOrConsonant alphabateIsVowelOrConsonant = new AlphabateIsVowelOrConsonant();
                         alphabateIsVowelOrConsonant.Alphabet();
                         break;
-
+                    case 10:
+                        LargestNumber largestNumber = new LargestNumber();
+                        largestNumber.LargestNum();
+                        break;
                 }
             }
         }
