@@ -43,6 +43,10 @@
                         EvenOrOdd evenOrOdd = new EvenOrOdd();
                         evenOrOdd.EvenandOdd();
                         break;
+                    case 9:
+                        AlphabateIsVowelOrConsonant alphabateIsVowelOrConsonant = new AlphabateIsVowelOrConsonant();
+                        alphabateIsVowelOrConsonant.Alphabet();
+                        break;
 
                 }
             }
